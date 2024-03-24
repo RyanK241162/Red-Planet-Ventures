@@ -1,0 +1,47 @@
+body {
+    background-image: url(../assets/Images/homePageHeader.png);
+  }
+
+.h1 {
+    text-align: left;
+  }
+  
+.h3 {
+    text-align: left;
+}
+
+ul.topNav-centered {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+  
+ul.topNav-centered li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+ul.topNav-centered li a:hover:not(.active){
+    background-color: #111;
+}
+  
+ul.topNav-centered li a.active{
+    background-color: #04AA6D;
+}
+  
+@media screen and (max-width: 600px){
+    ul.topNav-centered li.right, 
+    ul.topNav-centered li {float: none;}
+}
+.topNav-centered a{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
