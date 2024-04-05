@@ -1,5 +1,6 @@
 body {
     background-image: url(../assets/Images/homePageHeader.png);
+    background-size: cover;
   }
 
 .h1 {
@@ -12,27 +13,32 @@ body {
 
 ul.topNav-centered {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #d4d4d46b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 70px;
+    border-radius: 15px;
 }
 
   
 ul.topNav-centered li a{
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    flex: 10%;
 }
   
 ul.topNav-centered li a:hover:not(.active){
-    background-color: #111;
+    background-color: #b9b9b986;
 }
   
 ul.topNav-centered li a.active{
-    background-color: #04AA6D;
+    background-color: #b9b9b986;
 }
   
 @media screen and (max-width: 600px){
@@ -45,3 +51,9 @@ ul.topNav-centered li a.active{
     left: 0;
     transform: none;
 }
+
+@font-face{
+    font-family: 'Porter Sans Black';
+    src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format("woff");
+}
+

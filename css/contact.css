@@ -1,7 +1,3 @@
-nav {
-    background-image: url(../assets/Images/headerbackBack.png);
-  }
-
 .h1 {
     text-align: left;
   }
@@ -57,27 +53,32 @@ ul.topNav-centered li a.active{
 
 ul.topNav-centered {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #d4d4d46b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 70px;
+    border-radius: 15px;
 }
 
   
 ul.topNav-centered li a{
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    flex: 10%;
 }
   
 ul.topNav-centered li a:hover:not(.active){
-    background-color: #111;
+    background-color: #b9b9b986;
 }
   
 ul.topNav-centered li a.active{
-    background-color: #04AA6D;
+    background-color: #b9b9b986;
 }
   
 @media screen and (max-width: 600px){
@@ -90,13 +91,14 @@ ul.topNav-centered li a.active{
     left: 0;
     transform: none;
 }
+
 
 *{
     box-sizing: border-box;
 }
 
+
 body{
-    
     margin: 0;
 }
 
@@ -137,8 +139,8 @@ p{
     background-image: url(../assets/Images/formBack.png);
     background-size: cover;
     background-position: right;
-    padding: 2em 4em;
-    margin: 50px 0;
+    padding: 2em 2em;
+    margin: 70px 0;
     border-radius: 14px;
 }
 
@@ -218,3 +220,69 @@ fieldset{
  @font-face{
     font-family: 'Porter Sans Black';
     src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format("woff");
+    
+
+background-image: url(../assets/Images/headerbackBack.png);
+
+
+
+
+body {
+    background-image: url(../assets/Images/homePageHeader.png);
+    background-size: cover;
+  }
+
+.h1 {
+    text-align: left;
+  }
+  
+.h3 {
+    text-align: left;
+}
+
+ul.topNav-centered {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d4d4d46b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 70px;
+    border-radius: 15px;
+}
+
+  
+ul.topNav-centered li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    flex: 10%;
+}
+  
+ul.topNav-centered li a:hover:not(.active){
+    background-color: #b9b9b986;
+}
+  
+ul.topNav-centered li a.active{
+    background-color: #b9b9b986;
+}
+  
+@media screen and (max-width: 600px){
+    ul.topNav-centered li.right, 
+    ul.topNav-centered li {float: none;}
+}
+.topNav-centered a{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+@font-face{
+    font-family: 'Porter Sans Black';
+    src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format("woff");
+}
+
