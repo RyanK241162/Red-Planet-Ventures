@@ -125,7 +125,7 @@ h3{
     color: #ffffff;
 }
 p{
-    color: #ffffff;
+    color: #bcbcbc;
     font-family: 'Roboto';
 }
 
@@ -286,3 +286,28 @@ ul.topNav-centered li a.active{
     src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format("woff");
 }
 
+#logo{
+    align-items: last baseline;
+  }
+  
+
+.flexLeft{
+
+    align-items: left;
+    padding: 5em;
+}
+
+.imageContainer{
+    /* max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; */
+    width: 500px;
+}
+
+.flexImage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+    padding: 5em;
+}
