@@ -308,6 +308,6 @@ ul.topNav-centered li a.active{
 .flexImage{
     display: flex;
     justify-content: flex-end;
-    align-items: left;
+    align-items: right;
     padding: 5em;
 }
