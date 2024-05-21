@@ -57,3 +57,27 @@ ul.topNav-centered li a.active{
     src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format("woff");
 }
 
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  .button1 {
+    background-color: #f02d2d; 
+    color: white; 
+    border: 2px solid #f02d2d;
+  }
+  
+  .button1:hover {
+    background-color: #f02d2d;
+    color: white;
+  }
