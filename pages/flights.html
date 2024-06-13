@@ -30,6 +30,77 @@
     </header>
     </section>
 
+    <section>
+        <div class="flexItem">
+            <table class="ticketSection">
+              <tr>
+                <td colspan="2"> <p>Mars Tickets</p></td>
+                <td colspan="2">  <div class="stepper-input">
+                  <button class="btn btn-left" onclick="decreaseMars(); total()">-</button>
+                  <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsMars" min = 0>
+                  <button class="btn btn-right" onclick="increaseMars(); total();">+</button>
+               </div></td>
+              </tr>
+        
+              <tr>
+                <td colspan="2"> <p>Saturn Tickets</p></td>
+                <td colspan="2">  <div class="stepper-input">
+                  <button class="btn btn-left" onclick="decreaseSaturn();
+                  total()">-</button>
+                  <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsSaturn" min = 0>
+                  <button class="btn btn-right" onclick="increaseSaturn();total()">+</button>
+               </div></td>
+              </tr>
+
+              <tr>
+                <td colspan="2"> <p>Neptune Tickets</p></td>
+                <td colspan="2">  <div class="stepper-input">
+                  <button class="btn btn-left" onclick="decreaseNeptune();
+                  total()">-</button>
+                  <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsNeptune" min = 0>
+                  <button class="btn btn-right" onclick="increaseNeptune();total()">+</button>
+               </div></td>
+              </tr>
+
+              <tr>
+                <td colspan="2"> <p>Jupiter Tickets</p></td>
+                <td colspan="2">  <div class="stepper-input">
+                  <button class="btn btn-left" onclick="decreaseJupiter();
+                  total()">-</button>
+                  <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsJupiter" min = 0>
+                  <button class="btn btn-right" onclick="increaseJupiter();total()">+</button>
+               </div></td>
+              </tr>
+
+              <tr>
+                <td colspan="2"> <p>Uranus Tickets</p></td>
+                <td colspan="2">  <div class="stepper-input">
+                  <button class="btn btn-left" onclick="decreaseUranus();
+                  total()">-</button>
+                  <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsUranus" min = 0>
+                  <button class="btn btn-right" onclick="increaseUranus();total()">+</button>
+               </div></td>
+              </tr>
+
+              <tr>
+                <td colspan="2"> <p>Moon Tickets</p></td>
+                <td colspan="2">  <div class="stepper-input">
+                  <button class="btn btn-left" onclick="decreaseMoon();
+                  total()">-</button>
+                  <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsMoon" min = 0>
+                  <button class="btn btn-right" onclick="increaseMoon();total()">+</button>
+               </div></td>
+              </tr>
+            
+         
+          
+              <tr>
+                <td colspan="4"> <p>Total: <span id="total" ></span></p></td>
+              </tr>
+            </table>
+          </div>
+    </section>
+
 <section>
     <img src="../assets/Images/flighhtMars.png" height="450px">
 
@@ -104,12 +175,13 @@
     <p>Experience the ultimate lunar getaway with our "Moonlight Meander" 
         package. Depart Earths atmosphere aboard the "Celestial Cruiser" for a 
         short but unforgettable journey to the Moon. Enjoy lunar walks, 
-        breathtaking views of Earthrise, and stargazing under the moons serene 
+        breathtaking views of Earth rise, and stargazing under the moons serene 
         glow. Immerse yourself in luxury accommodations amidst the tranquility 
         of space.</p>
 
 </section>
-
+    
+        <script src="../js/script.js"></script>
 
     <footer>
         <p>All Rights Reserved @ Open Window 2024</p> <p>Terms & Conditions</p> <p>Privacy & Policy</p>
