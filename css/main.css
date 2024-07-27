@@ -1,6 +1,7 @@
 body {
     background-image: url(../assets/Images/homePageHeader.png);
     background-size: cover;
+
   }
 
 .h1 {
@@ -80,4 +81,10 @@ ul.topNav-centered li a.active{
   .button1:hover {
     background-color: #f02d2d;
     color: white;
+  }
+
+  .searchBar {
+    width: 375px;
+    height: 29px;
+    background: white;
   }

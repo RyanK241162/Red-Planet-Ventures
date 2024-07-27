@@ -6,6 +6,21 @@ let totalNeptuneCost = 0;
 let totalJupiterCost = 0;
 let totalUranusCost = 0;
 let totalMoonCost = 0;
+let popup = document.getElementById("popup");
+const search = () =>{
+  const seachbox = document.getElementById("search-item").value.toUpperCase();
+  const planets = document.getElementById("planet-list")
+  const tickets = document.querySelectorAll("ticket")
+}
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
+
 function increaseMars() {
   document.getElementById("ticketsMars").value =  parseInt(document.getElementById("ticketsMars").value) + 1;
 }
@@ -114,3 +129,4 @@ function increaseMoon() {
   document.getElementById("ticketsMoon").value =
     parseInt(document.getElementById("ticketsMoon").value) + 1;
 }
+

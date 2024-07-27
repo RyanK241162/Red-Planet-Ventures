@@ -13,6 +13,13 @@
 <img src="../assets/Images/headerbackBack.png" width="100%"> 
 </head>
 <body id="page1">
+
+  <section class="searchBar">
+    <form>
+        <input type="text" id="search-item" placeholder="Search" onkeyup="search()">
+    </form>
+</section>
+
     <nav>
         <ul class="topNav-centered">
             <img class="lead text-start" src="../assets/Images/logo.png" width="100px">
@@ -30,10 +37,21 @@
         <h2>BOOK A FLIGHT</h2>
     </header>
     </section>
+    
 
     <section>
         <div class="flexItem">
             <table class="ticketSection">
+              <div >
+              <img src="../assets/Images/flighhtMars.png" height="450px">
+
+              <h2>The Classic Mars Experience</h2>
+              <p>R25,000.00     <s>R50,000.00</s></p>
+              <p>Embark on a Mars vacation: red deserts, ancient relics, and towering 
+                  canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons, and 
+                  stargazing under Phobos and Deimos. Unforgettable adventures beckon 
+                  on the rust-colored landscapes of the Red Planet.</p>
+              </div>
               <tr>
                 <td colspan="2"> <p>Mars Tickets</p></td>
                 <td colspan="2">  <div class="stepper-input">
@@ -43,6 +61,18 @@
                </div></td>
               </tr>
         
+              <img src="../assets/Images/flightSaturn.png" height="450px">
+
+              <h2>Ring Around A Saturn</h2>
+              <p>R40,000.00</p>
+              <p>Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer." 
+                  Marvel at its iconic rings and turbulent storms. Explore its diverse moons, 
+                  from icy Enceladus to mysterious Titan, with activities including rover 
+                  expeditions and cave exploration. Experience the wonders of the cosmos 
+                  amidst luxurious accommodations, where the thrill of discovery 
+                  intertwines seamlessly with the excitement of adventure.</p>
+          
+
               <tr>
                 <td colspan="2"> <p>Saturn Tickets</p></td>
                 <td colspan="2">  <div class="stepper-input">
@@ -52,6 +82,17 @@
                   <button class="btn btn-right" onclick="increaseSaturn();total()">+</button>
                </div></td>
               </tr>
+
+              <img src="../assets/Images/flightNeptune.png" height="450px">
+
+              <h2>Neptune's Cosmic Dive</h2>
+              <p>R45,000.00</p>
+              <p>Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness 
+                  surreal vistas of swirling clouds and rings. Experience weightlessness and 
+                  explore frigid oceans. Engage in thrilling spacewalks, observe celestial 
+                  phenomena, and savor gourmet space cuisine. An unforgettable 
+                  adventure awaits, blending luxury with cosmic exploration.</p>
+          
 
               <tr>
                 <td colspan="2"> <p>Neptune Tickets</p></td>
@@ -63,6 +104,17 @@
                </div></td>
               </tr>
 
+              <img src="../assets/Images/flightJupiter.png" height="450px">
+
+              <h2>The Giants Journey</h2>
+              <p>R65,000.00</p>
+              <p>Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its 
+                  majestic storms and swirling atmosphere. Dive into metallic hydrogen 
+                  oceans. Explore its moons, each a world unto itself. Engage in gravity 
+                  surfing, comet chasing, and space excursions. Experience cosmic wonder 
+                  in luxury, blending exploration with adventure.</p>
+          
+
               <tr>
                 <td colspan="2"> <p>Jupiter Tickets</p></td>
                 <td colspan="2">  <div class="stepper-input">
@@ -72,6 +124,18 @@
                   <button class="btn btn-right" onclick="increaseJupiter();total()">+</button>
                </div></td>
               </tr>
+
+              <img src="../assets/Images/flightUranus.png" height="450px">
+
+              <h2>Uranus Uncharted</h2>
+              <p>R40,000.00</p>
+              <p>Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour. 
+                  Explore its icy atmosphere and captivating moons. Experience thrilling 
+                  zero-gravity excursions, witness mesmerizing auroras, and immerse 
+                  yourself in celestial photography workshops. With luxury 
+                  accommodations and expert guides, discover the wonders of Uranus in a 
+                  journey of a lifetime.</p>
+          
 
               <tr>
                 <td colspan="2"> <p>Uranus Tickets</p></td>
@@ -83,6 +147,18 @@
                </div></td>
               </tr>
 
+              <img src="../assets/Images/flightMoon.png" height="450px">
+
+              <h2>Moonlight Meander</h2>
+              <p>R15,000.00</p>
+              <p>Experience the ultimate lunar getaway with our "Moonlight Meander" 
+                  package. Depart Earths atmosphere aboard the "Celestial Cruiser" for a 
+                  short but unforgettable journey to the Moon. Enjoy lunar walks, 
+                  breathtaking views of Earth rise, and stargazing under the moons serene 
+                  glow. Immerse yourself in luxury accommodations amidst the tranquility 
+                  of space.</p>
+          
+
               <tr>
                 <td colspan="2"> <p>Moon Tickets</p></td>
                 <td colspan="2">  <div class="stepper-input">
@@ -93,7 +169,6 @@
                </div></td>
               </tr>
             
-         
           
               <tr>
                 <td colspan="4"> <p>Total: <span id="total" ></span></p></td>
@@ -102,85 +177,6 @@
           </div>
     </section>
 
-<section>
-    <img src="../assets/Images/flighhtMars.png" height="450px">
-
-    <h2>The Classic Mars Experience</h2>
-    <p>R25,000.00     <s>R50,000.00</s></p>
-    <p>Embark on a Mars vacation: red deserts, ancient relics, and towering 
-        canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons, and 
-        stargazing under Phobos and Deimos. Unforgettable adventures beckon 
-        on the rust-colored landscapes of the Red Planet.</p>
-
-</section>
-
-<section>
-    <img src="../assets/Images/flightNeptune.png" height="450px">
-
-    <h2>Neptune's Cosmic Dive</h2>
-    <p>R45,000.00</p>
-    <p>Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness 
-        surreal vistas of swirling clouds and rings. Experience weightlessness and 
-        explore frigid oceans. Engage in thrilling spacewalks, observe celestial 
-        phenomena, and savor gourmet space cuisine. An unforgettable 
-        adventure awaits, blending luxury with cosmic exploration.</p>
-
-</section>
-
-<section>
-    <img src="../assets/Images/flightJupiter.png" height="450px">
-
-    <h2>The Giants Journey</h2>
-    <p>R65,000.00</p>
-    <p>Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its 
-        majestic storms and swirling atmosphere. Dive into metallic hydrogen 
-        oceans. Explore its moons, each a world unto itself. Engage in gravity 
-        surfing, comet chasing, and space excursions. Experience cosmic wonder 
-        in luxury, blending exploration with adventure.</p>
-
-</section>
-
-<section>
-    <img src="../assets/Images/flightSaturn.png" height="450px">
-
-    <h2>Ring Around A Saturn</h2>
-    <p>R40,000.00</p>
-    <p>Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer." 
-        Marvel at its iconic rings and turbulent storms. Explore its diverse moons, 
-        from icy Enceladus to mysterious Titan, with activities including rover 
-        expeditions and cave exploration. Experience the wonders of the cosmos 
-        amidst luxurious accommodations, where the thrill of discovery 
-        intertwines seamlessly with the excitement of adventure.</p>
-
-</section>
-
-<section>
-    <img src="../assets/Images/flightUranus.png" height="450px">
-
-    <h2>Uranus Uncharted</h2>
-    <p>R40,000.00</p>
-    <p>Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour. 
-        Explore its icy atmosphere and captivating moons. Experience thrilling 
-        zero-gravity excursions, witness mesmerizing auroras, and immerse 
-        yourself in celestial photography workshops. With luxury 
-        accommodations and expert guides, discover the wonders of Uranus in a 
-        journey of a lifetime.</p>
-
-</section>
-
-<section>
-    <img src="../assets/Images/flightMoon.png" height="450px">
-
-    <h2>Moonlight Meander</h2>
-    <p>R15,000.00</p>
-    <p>Experience the ultimate lunar getaway with our "Moonlight Meander" 
-        package. Depart Earths atmosphere aboard the "Celestial Cruiser" for a 
-        short but unforgettable journey to the Moon. Enjoy lunar walks, 
-        breathtaking views of Earth rise, and stargazing under the moons serene 
-        glow. Immerse yourself in luxury accommodations amidst the tranquility 
-        of space.</p>
-
-</section>
     
         <script src="../js/script.js"></script>
 
