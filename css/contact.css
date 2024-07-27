@@ -1,5 +1,5 @@
 .h1 {
-    text-align: left;
+    font-family: myFont;
   }
   
 .h3 {
@@ -43,9 +43,7 @@ ul.topNav-centered li a.active{
 }
 
 
-.h1 {
-    text-align: left;
-  }
+
   
 .h3 {
     text-align: left;
@@ -95,11 +93,6 @@ ul.topNav-centered li a.active{
 
 *{
     box-sizing: border-box;
-}
-
-
-body{
-    margin: 0;
 }
 
 .flexRight{
@@ -218,23 +211,27 @@ fieldset{
   }
 
  @font-face{
-    font-family: 'Porter Sans Black';
-    src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format("woff");
+    font-family: myFont;
+    src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block.otf);
     
 
 background-image: url(../assets/Images/headerbackBack.png);
 
 
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 body {
-    background-image: url(../assets/Images/homePageHeader.png);
+    background-image: url(../assets/Images/aboutImage.jpg);
     background-size: cover;
+    margin: 0;
+    font-family: myFont;
   }
 
-.h1 {
-    text-align: left;
-  }
   
 .h3 {
     text-align: left;
@@ -281,10 +278,7 @@ ul.topNav-centered li a.active{
     transform: none;
 }
 
-@font-face{
-    font-family: 'Porter Sans Black';
-    src: url(../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format("woff");
-}
+
 
 #logo{
     align-items: last baseline;
@@ -312,9 +306,6 @@ ul.topNav-centered li a.active{
     padding: 5em;
 }
 
-body{
-    background-color: #6cf7d4;
- }
  .stepper-input {   
     display: flex;
     font-size: 5em;
@@ -378,5 +369,7 @@ body{
    color: #fff;
    box-shadow: 0px 3px 15px rgba(253, 254, 255, 0.589);
  }
- 
- 
+
+ .h2 {
+    text-align: center;
+ }
