@@ -6,19 +6,37 @@ let totalNeptuneCost = 0;
 let totalJupiterCost = 0;
 let totalUranusCost = 0;
 let totalMoonCost = 0;
-let popup = document.getElementById("popup");
-const search = () =>{
-  const seachbox = document.getElementById("search-item").value.toUpperCase();
-  const planets = document.getElementById("planet-list")
-  const tickets = document.querySelectorAll("ticket")
+
+const search = () => {
+  const searchbox = document.getElementById("search-item").value.toUpperCase();
+  const ticketitems = getElementById("flexItem")
+  const product = document.querySelectorAll("stepper-input")
+  const pname = document.getElementsByTagName("h2")
+
+  for(var i = 0; i < pname.length; i++){
+    let match = product[i].getElementsByTagName('h2')[0];
+
+    if(match){
+      let textvalue = match.textContent || match.innerHTML
+
+      if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+        product[i].computedStyleMap.display = ""; 
+      }else{
+        product[i].computedStyleMap.display = "none";
+      }
+    }
+  }
 }
 
-function openPopup(){
-  popup.classList.add("open-popup");
-}
 
-function closePopup(){
-  popup.classList.remove("open-popup");
+var myCarousel = document.getElementById('myCarousel')
+
+myCarousel.addEventListener('slide.bs.carousel', function () {
+
+})
+
+function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
 }
 
 function increaseMars() {
